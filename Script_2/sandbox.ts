@@ -3,10 +3,10 @@ console.log(character)
 
 const inputs = document.querySelectorAll('input')
 
-console.log(inputs) 
+// console.log(inputs) 
 
 inputs.forEach(input => {
-  console.log(input)
+  // console.log(input)
 })
 
 let myName = "Azeezjim";
@@ -20,6 +20,10 @@ age = 24;
 const circ = (diametar : number) => {
   diametar * Math.PI
 }
-
-
 console.log(circ(5.5))
+
+// leason 4
+
+let names = ['Azeezjim', 'Azeez', ' jim']
+
+names.push ('Garuba')
