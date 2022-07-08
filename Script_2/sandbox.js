@@ -24,8 +24,15 @@ age = 30;
 var objectName;
 objectName = ['Lateefa'];
 objectName.push('Jamilah');
-// union Type 
+// union Type for Array
 var mixed = [];
 mixed.push(25);
 mixed.push("Ibnu Baz");
 console.log(mixed);
+// union Type for varable
+var mixedVArables;
+mixedVArables = 20;
+mixedVArables = 'I am a string';
+mixedVArables = true;
+// Object Declareation 
+var objectNames;

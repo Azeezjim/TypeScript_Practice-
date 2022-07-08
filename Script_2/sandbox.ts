@@ -42,10 +42,27 @@ objectName = ['Lateefa']
 
 objectName.push('Jamilah')
 
-// union Type 
+// union Type for Array
 
 let  mixed: (string|number)[] =[]
 
 mixed.push(25)
 mixed.push("Ibnu Baz")
 console.log(mixed)
+
+// union Type for varable
+
+let mixedVArables: string|number|boolean
+
+mixedVArables = 20
+mixedVArables = 'I am a string'
+mixedVArables = true 
+
+
+// Object Declareation 
+
+let objectNames: {
+  name: string,
+  age: number,
+  isMarried: boolean
+}
