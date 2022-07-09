@@ -66,3 +66,32 @@ let objectNames: {
   age: number,
   isMarried: boolean
 }
+
+// ANY TYPE  
+
+let value: any = 40;
+value = 'Azeezjim'
+console.log(value)
+
+// ANy Array 
+
+let anyArray: any[] = []
+
+anyArray.push(29)
+anyArray.push('annay array string')
+anyArray.push(true)
+console.log(anyArray)
+
+// ANY Object 
+
+let anyObject: {
+  name: any,
+  age: any
+}; 
+
+anyObject = {
+  name: 23,
+  age:"24 years old"
+}
+
+console.log(anyObject)
