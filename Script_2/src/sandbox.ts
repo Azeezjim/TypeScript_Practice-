@@ -95,3 +95,9 @@ anyObject = {
 }
 
 console.log(anyObject)
+
+// FUNCTION  
+
+  const functionInit = (a: number, b: number, c?:number | string, d: string | boolean = true ) => {
+
+  }
