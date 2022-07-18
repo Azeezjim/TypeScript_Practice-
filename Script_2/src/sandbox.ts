@@ -101,3 +101,55 @@ console.log(anyObject)
   const functionInit = (a: number, b: number, c?:number | string, d: string | boolean = true ) => {
 
   }
+
+type strNo = string | number | boolean;
+
+let password : strNo;
+
+password = 2773693;
+
+password = 'Azeezjim'
+
+password = true
+
+// Function Signature 
+
+// example 1
+let greet: ( a: number, b: number, c: string ) => void;
+
+// example 2
+
+let calc : (a: number, b: number, c: string ) => number;
+
+calc = (number1, number2, action) => {
+  if(action === 'add') {
+    return number1 + number2
+  } else {
+    return number1 - number2 
+  }
+}
+
+// calc(3, 8)
+
+// example 3  
+
+let logDetails: (obj: {name: string, age: number }) => void
+
+type person = {name: string, age: number}
+
+logDetails = (myDetails: person) => {
+  console.log(`${myDetails.name} is ${myDetails.age} years old`)
+}
+
+// logDetails('Azeezjim' 24)
+
+// Interface 
+
+interface isPersn {
+  nmae : string,
+  age: number,  
+  speaks(a: string): void,
+  spends(b: number): number
+}
+
+const me 
