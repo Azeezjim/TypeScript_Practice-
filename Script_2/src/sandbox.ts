@@ -145,11 +145,29 @@ logDetails = (myDetails: person) => {
 
 // Interface 
 
-interface isPersn {
-  nmae : string,
-  age: number,  
-  speaks(a: string): void,
-  spends(b: number): number
+interface isPerson {
+  name : string;
+  age: number;
+  speaks(a: string): void;
+  spends(b: number): number;
 }
 
-const me 
+const me: isPerson = {
+  name: 'Azeezjim',
+  age: 24,
+  speaks(text: string) {
+    console.log(text)
+  },
+  spends(amount: number): number {
+    console.log('I spent', amount)
+    return amount
+  }
+}
+
+console.log('me', me)
+
+const greatPerson = (person: isPerson) => {
+  console.log('hello', person.name)
+}
+
+greatPerson(me)
