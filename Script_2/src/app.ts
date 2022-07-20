@@ -2,15 +2,15 @@ import { Invoice } from './classes/Invoice.js';
 import { Payment } from './classes/Payment.js';
 import { HasFormatter } from './interfaces/HasFormatter.js';
 
-// let docOne: HasFormatter;
-// let docTwo: HasFormatter;
+let docOne: HasFormatter;
+let docTwo: HasFormatter;
 
-// docOne = new Invoice('yoshi', 'web work', 250);
-// docTwo = new Payment('mario', 'plumbing', 200);
+docOne = new Invoice('yoshi', 'web work', 250);
+docTwo = new Payment('mario', 'plumbing', 200);
 
-// let docs: HasFormatter[] = [];
-// docs.push(docOne);
-// docs.push(docTwo);
+let docs: HasFormatter[] = [];
+docs.push(docOne);
+docs.push(docTwo);
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 console.log(form.children);
@@ -27,8 +27,8 @@ form.addEventListener('submit', (e: Event) => {
   let doc: HasFormatter;
   if (type.value === 'invoice') {
     doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
-  } else {
+  } else { 
     doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
   }
-  console.log(doc);
+  console.log('doc', doc);
 });
